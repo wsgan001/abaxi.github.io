@@ -16,10 +16,12 @@
 title: Arjun Bakshi 
 email: bakshi.11@osu.edu
 description: >- # this means to ignore newlines until "baseurl:"
+resume_url: pdfs/Arjun_Bakshi_CV.pdf
+scholar_url: https://scholar.google.com/citations?user=QFQtz74AAAAJ&hl=en&oi=ao
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://abaxi.github.io"
 github_username:  abaxi
-
+show_downloads: true
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-cayman

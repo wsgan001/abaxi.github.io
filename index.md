@@ -9,8 +9,6 @@ I'm interested in the application of machine learning to problems in wireless co
 
 
 # Projects and publications
-[Google scholar](https://scholar.google.com/citations?user=QFQtz74AAAAJ&hl=en&oi=ao)
-
 ## **Pattern Based Community Detection in Graph Datasets:**
 The goal of this project is to add supervision to the process of community detection in large graphs. We extract telltale patterns from a small seed set of communities and use them to greatly improve the quality of detected communities.
 

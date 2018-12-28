@@ -21,12 +21,12 @@
   </head>
   <body>
     <header class="page-header" role="banner">
-      <h1 class="project-name">{{ site.title}}</h1>
+      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.email  }}</h2>
-      
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
+      <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+
+      <a href="{{ site.resume_url }}" class="btn">Resume</a>
+      <a href="{{ site.scholar_url }}" class="btn">Google Scholar</a>
     </header>
 
     <main id="content" class="main-content" role="main">
