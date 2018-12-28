@@ -35,36 +35,78 @@
 
 <p>I’m interested in the application of machine learning to problems in wireless communication. I have also worked on problems in network/graph mining, and text mining. Before joining OSU, I received my MS in <a href="https://ceas.uc.edu/academics/departments/electrical-engineering-computer-science.html">Computer Science from the University Of Cincinnati</a>.</p>
 
-<h2 id="publications">Publications</h2>
+<h1 id="projects-and-publications">Projects and publications</h1>
 <p><a href="https://scholar.google.com/citations?user=QFQtz74AAAAJ&amp;hl=en&amp;oi=ao">Google scholar</a></p>
 
+<h2 id="pattern-based-community-detection-in-graph-datasets"><strong>Pattern Based Community Detection in Graph Datasets:</strong></h2>
+<p>The goal of this project is to add supervision to the process of community detection in large graphs. We extract telltale patterns from a small seed set of communities and use them to greatly improve the quality of detected communities.</p>
+
+<h3 id="abstract">Abstract:</h3>
+<p>In recent years there have been a few semi-supervised community detection approaches that use community membership information, or node metadata to improve their performance. However, communities have always been thought of as clique-like structures, while the idea of finding and leveraging other patterns in communities is relatively unexplored. Online social networks provide a corpus of real communities in large graphs which can be used to understand dataset specific community patterns. In this paper, we design a way to represent communities concisely in an easy to compute feature space. We design an efficient community detection algorithm that uses size and structural information of communities from a training set to find communities in the rest of the graph. We show that our approach achieves 10% higher F1 scores on average compared to several other methods on large real-world graph datasets, even when the training set is small.</p>
+
+<p><img src="/assets/vs_rand.png" alt="" />
+<em>Unique patterns discovered by Bespoke</em></p>
+
 <ul>
-  <li>
-    <p><strong>Arjun Bakshi</strong>, Srinivasan Parthasarathy, Kannan Srinivasan, “Semi-Supervised Community Detection Using Structure and Size”, IEEE International Conference on Data Mining, ICDM 2018. 
+  <li><strong>Arjun Bakshi</strong>, Srinivasan Parthasarathy, Kannan Srinivasan, “Semi-Supervised Community Detection Using Structure and Size”, IEEE International Conference on Data Mining, ICDM 2018. 
 <a href="pdfs/bespoke_icdm18_paper.pdf">paper</a>
 <a href="https://docs.google.com/presentation/d/1_qJpRIZyGJ8cWcuHPOkQ0dsPef91KUn0abPSIrh_qcw/edit?usp=sharing">slides</a>
-<a href="https://github.com/abaxi/bespoke-icdm18">code</a></p>
-  </li>
-  <li>
-    <p>Tanmoy Das, Lu Chen, Rupam Kundu, <strong>Arjun Bakshi</strong>, Prasun Sinha, Kannan Srinivasan, Gaurav Bansal, and Takayuki Shimizu. “CoReCast: Collision Resilient Broadcasting in Vehicular Networks.”  ACM International Conference on Mobile Systems, Applications, and Services, ACM MobiSys, 2018. 
-<a href="pdfs/corecast_paper.pdf">paper</a>
-<a href="https://youtu.be/mnB5LLZ65-0">video</a> <a href="https://docs.google.com/presentation/d/1_4JhVW_e0ZPUS_aX9biOc1z62ycGODTLeYhNrWhhrz0/edit?usp=sharing">slides</a></p>
-  </li>
-  <li>
-    <p><strong>Arjun Bakshi</strong>, Lu Chen, Kannan Srinivasan, C. Emre Koksal, and Atilla Eryilmaz. “ EMIT: An efficient MAC paradigm for the Internet of Things.” IEEE International Conference on Computer Communications, IEEE INFOCOM, 2016.
-<a href="pdfs/emit_paper.pdf">paper</a></p>
-  </li>
-  <li>
-    <p>Chao Wu, <strong>Arjun Bakshi</strong>, Bruce Aronow, Anil Jegga, and Raj Bhatnagar. “A Biclustering Algorithm to Discover Functional Modules from ENCODE ChIP-Seq Data.” IEEE International Conference on Data Mining Workshops, IEEE ICDM Workshops, 2013.
-<a href="https://scholar.google.com/citations?user=QFQtz74AAAAJ&amp;hl=en&amp;oi=ao">paper</a></p>
-  </li>
-  <li>
-    <p><strong>Arjun Bakshi</strong>, and Raj Bhatnagar. “Learning cost-sensitive rules for non-forced classification.” IEEE International Conference on Data Mining Workshops, IEEE ICDM Workshops, 2012.
-<a href="https://scholar.google.com/citations?user=QFQtz74AAAAJ&amp;hl=en&amp;oi=ao">paper</a></p>
-  </li>
+<a href="https://github.com/abaxi/bespoke-icdm18">code</a></li>
 </ul>
 
-<h2 id="courses-taught">Courses Taught</h2>
+<h2 id="full-duplex-system-for-vehicular-networks"><strong>Full Duplex System for Vehicular Networks:</strong></h2>
+<p>Communication systems in vehicular networks face issues like dynamic environment, fast changing network size and membership, and high coordination costs. This project addresses those issues, and enables full-duplex communication between cars that is resilient to interference from other broadcast messages. The system is well suited for short road safety messages.</p>
+
+<h3 id="abstract-1">Abstract:</h3>
+<p>Reliable and timely delivery of periodic V2V (vehicle-to-vehicle) broadcast messages is essential for realizing the benefits of connected vehicles. Existing MAC protocols for ad hoc networks fall short of meeting these requirements. In this paper, we present, CoReCast, the first collision embracing protocol for vehicular networks. CoReCast provides high reliability and low delay by leveraging two unique opportunities: no strict constraint on energy consumption, and availability of GPS clocks to achieve near-perfect time and frequency synchronization. Due to low coherence time, the channel changes rapidly in vehicular networks. CoReCast embraces packet collisions and takes advantage of the channel dynamics to decode collided packets. The design of CoReCast is based on a preamble detection scheme that estimates channels from multiple transmitters without any prior information about them. The proposed scheme reduces the space and time requirement exponentially than the existing schemes.</p>
+
+<p><img src="/assets/corecast.png" alt="" /></p>
+<ul>
+  <li>Tanmoy Das, Lu Chen, Rupam Kundu, <strong>Arjun Bakshi</strong>, Prasun Sinha, Kannan Srinivasan, Gaurav Bansal, and Takayuki Shimizu. “CoReCast: Collision Resilient Broadcasting in Vehicular Networks.”  ACM International Conference on Mobile Systems, Applications, and Services, ACM MobiSys, 2018. 
+<a href="pdfs/corecast_paper.pdf">paper</a>
+<a href="https://youtu.be/mnB5LLZ65-0">video</a> <a href="https://docs.google.com/presentation/d/1_4JhVW_e0ZPUS_aX9biOc1z62ycGODTLeYhNrWhhrz0/edit?usp=sharing">slides</a></li>
+</ul>
+
+<h2 id="low-latency-mac-for-iot-devices"><strong>Low Latency MAC for IoT Devices:</strong></h2>
+<p>A MAC protocol designed specifically for IoT traffic in a dense IoT deployment. It eliminates the large channel access delay experienced by such devices by making interference power predictable across space and time, and adapting to an appropriate rate and modulation.</p>
+
+<h3 id="abstract-2">Abstract</h3>
+
+<p>The future Internet of Things (IoT) networks are expected to be composed of a large population of low-cost devices communicating dynamically with access points or neighboring devices to communicate small bundles of delay-sensitive data. To support the high-intensity and short-lived demands of these emerging networks, we propose an Efficient MAC paradigm for IoT (EMIT). Our paradigm bypasses the high overhead and coordination costs of existing MAC solutions by employing an interference-averaging strategy that allow users to share their resources simultaneously. In contrast to the predominant interference-suppressing approaches, EMIT exploits the dense and dynamic nature of IoT networks to reduce the spatio-temporal variability of interference to achieve low-delay and high-reliability in service. This paper introduces foundational ideas of EMIT by characterizing the global interference statistics in terms of single-device operation and develops power-rate allocation strategies to guarantee low-delay high-reliability performance.</p>
+
+<p><img src="/assets/emit.png" alt="" />
+<em>Compared to CSMA, the variation in interference across space and time is reduced under the proposed scheme (EMIT)</em></p>
+
+<ul>
+  <li><strong>Arjun Bakshi</strong>, Lu Chen, Kannan Srinivasan, C. Emre Koksal, and Atilla Eryilmaz. “ EMIT: An efficient MAC paradigm for the Internet of Things.” IEEE International Conference on Computer Communications, IEEE INFOCOM, 2016.
+<a href="pdfs/emit_paper.pdf">paper</a></li>
+</ul>
+
+<h2 id="quantitative-image-analysis-of-brain-tumor-histopathology"><strong>Quantitative Image Analysis of Brain Tumor Histopathology:</strong></h2>
+<p>High throughput medical imaging generates images that are good candidates for automated, data driven analysis. This project presents a pipeline for efficiently identifying patterns that can be used to detect gene expression
+from H&amp;E stained biopsy images. The pipeline first identifies and segments cells present in the images. It then extracts local and global feactures based on patterns in cell count, density and layout that can be used for correlation analysis with gene expression data.</p>
+
+<p><img src="/assets/GLBio.png" alt="" /></p>
+
+<h2 id="biclustering-on-chip-seq-data"><strong>BiClustering on ChIP-Seq Data</strong></h2>
+<h3 id="abstract-3">Abstract:</h3>
+<p>In this paper we present a novel framework capable of finding statistically significant biclusters on ENCODE ChIP sequencing datasets. Our goal is to discover low biclusters with low variance in terms of gene expression, which in theory shold point to coherent functional modules.</p>
+
+<ul>
+  <li>Chao Wu, <strong>Arjun Bakshi</strong>, Bruce Aronow, Anil Jegga, and Raj Bhatnagar. “A Biclustering Algorithm to Discover Functional Modules from ENCODE ChIP-Seq Data.” IEEE International Conference on Data Mining Workshops, IEEE ICDM Workshops, 2013.
+<a href="https://scholar.google.com/citations?user=QFQtz74AAAAJ&amp;hl=en&amp;oi=ao">paper</a></li>
+</ul>
+
+<h2 id="learning-cost-sensitive-rules-for-classification-tasks"><strong>Learning Cost-Sensitive Rules for Classification Tasks</strong></h2>
+<h3 id="abstract-4">Abstract:</h3>
+<p>Building accurate classifiers is very desirable for many KDD processes. Rule-based classifiers are appealing because of their simplicity and their self-explanatory nature in describing reasons for their decisions. The objective of classifiers generally has been to maximize the accuracy of predictions. When data points of different classes have different misclassification costs it becomes desirable to minimize the expected cost of the classification decisions. In this paper we present an algorithm for inducing a rule based classifier that (i) shifts the class boundaries so as to minimize the cost of misclassifications and (ii) refuses to announce a class decision for those regions of the data space that are likely to contribute significantly to the expected cost of decisions.</p>
+
+<ul>
+  <li><strong>Arjun Bakshi</strong>, and Raj Bhatnagar. “Learning cost-sensitive rules for non-forced classification.” IEEE International Conference on Data Mining Workshops, IEEE ICDM Workshops, 2012.
+<a href="https://scholar.google.com/citations?user=QFQtz74AAAAJ&amp;hl=en&amp;oi=ao">paper</a></li>
+</ul>
+
+<h1 id="courses-taught">Courses Taught</h1>
 
 <ul>
   <li>CSE 1110 - Introduction to Computing Technology
@@ -75,13 +117,13 @@
   <li>CSE 5243 - Introduction to Data Mining
     <ul>
       <li>Graduate Teaching Assistant</li>
-      <li>Received Elenor Quinian Memorial (Teaching Assistant) Award</li>
+      <li>Received Elenor Quinian Memorial Award for teaching</li>
     </ul>
   </li>
   <li>CSE 5461 - Computer Networking and Internet Technologies</li>
 </ul>
 
-<h2 id="course-projects">Course Projects</h2>
+<h1 id="course-projects">Course Projects</h1>
 
 <ul>
   <li>
